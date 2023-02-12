@@ -22,10 +22,10 @@ jobs:
         username: ${{ secrets.DOCKER_USER_NAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Build and push
-        uses: docker/build-push-action@v4
-        with:
-          push: true
-          tags: michaln28/faster-docker-build:v0.1
+      uses: docker/build-push-action@v4
+      with:
+        push: true
+        tags: michaln28/faster-docker-build:v0.1
     #- name: Build the Docker image
     #  run: docker build . --file Dockerfile --tag michaln28/faster-docker-build:v0.1
     #- name: Push Docker image
