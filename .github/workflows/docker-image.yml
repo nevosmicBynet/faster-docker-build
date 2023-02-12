@@ -1,3 +1,4 @@
+# This CI only run once
 name: Docker Image CI
 
 on:
