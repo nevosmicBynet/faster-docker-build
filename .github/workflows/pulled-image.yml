@@ -23,8 +23,8 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t michaln28/faster-docker-build:v0.2 .
+      run: docker build -t michaln28/faster-docker-build:v0.3 .
 
     - name: Push Docker image
-      run: docker push michaln28/faster-docker-build:v0.2
+      run: docker push michaln28/faster-docker-build:v0.3
       
